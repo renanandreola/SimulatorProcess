@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ptbr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simulador de Processos</title>
+    
+    {% block styles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    {% endblock %}
+ 
+     
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="menu collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="item-menu nav-item nav-link" href="/">HOME</a>
+            <a class="item-menu nav-item nav-link" href="/simulator">SIMULADOR</a>
+            <a class="item-menu nav-item nav-link" href="/about">SOBRE</a>
+          </div>
+        </div>
+      </nav>
+     
+    {% block content %}
+   
+    <!--CONTEUDO DO INDEX-->
+
+    {% endblock %}
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+    
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">INFORMAÇÕES</h5>
+                    <p>Simulador de processos</p>
+                    <p>Objetivo educacional e diático</p>
+                </div>
+                <div class="col-md-4 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">LINKEDIN DOS DESENVOLVEDORES</h5>
+                    <p>link</p>
+                    <p>Link</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Siga-nos nas redes sociais</h5>
+                   
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center text-muted">
+            <p>Redes sociais</p>
+        </div>
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a href="https://pt-br.facebook.com/" class="btn-floating btn-fb mx-3">
+                    <i class="fab fa-facebook-f">Facebook</i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-3">
+                    <i class="fab fa-twitter">Twitter</i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://plus.google.com/?hl=pt-BR" class="btn-floating btn-gplus mx-3">
+                    <i class="fab fa-google-plus-g">Google Plus</i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://br.linkedin.com" class="btn-floating btn-li mx-3">
+                    <i class="fab fa-linkedin-in">Linkedin</i>
+                </a>
+            </li>
+        </ul>
+        <!-- Parte inferior da footer -->
+        <div class="text-center text-muted">
+            <p class="small">Desenvolvido por: <i class="fas fa-copyright"></i> Renan Andreolla, Fernando Lise, Wesley Santos, Lucas Paludo</p>
+        </div>
+</div>
+  </footer>
+
+    {% block script %}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" charset="utf-8"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/base.js" charset="utf-8"></script>
+    {% endblock %}
+  </body>
+</html>

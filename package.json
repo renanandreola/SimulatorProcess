@@ -1,0 +1,22 @@
+{
+  "name": "simulatorprocess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e * server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.2",
+    "nunjucks": "^3.2.1",
+    "restify": "^8.5.1",
+    "useful-nunjucks-filters": "^0.1.3"
+  }
+}

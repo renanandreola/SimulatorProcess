@@ -1,0 +1,94 @@
+{% extends './layouts/base.html' %}
+
+
+
+{% block content %}
+<!--
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://www.termineseusestudos.com.br/wp-content/uploads/2020/01/Instagram-%C3%ADcone.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Instagram</h5>
+    <p class="card-text">Ao clicar voce iniciara um procesoi auisssiaushd</p>
+    <a href="#" class="btn btn-primary" data-bind="click: start">Inicar</a>
+  </div>
+</div>
+
+
+
+<div class="box-body no-padding">
+  <div class="box">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Aplicativo</th>
+          <th>Memoria utilizada</th>
+          <th>teste</th>
+        </tr>
+      </thead>
+      
+      <tbody data-bind="foreach: tableUsers">
+          <tr>
+            <td class="table-info" data-bind="text: appName"></td>
+              <td class="table-info" data-bind="text: tableMemory"></td>
+              <td class="table-info" data-bind="text: tableTest"></td>
+          </tr>
+      </tbody>
+      
+    </table>
+  </div>
+   /.box-body -->
+</div>
+
+<br>
+<br><br>
+<br><br>
+<br>
+<br>
+
+
+<div class="container">
+  <form id="form" class="mt-4" method="post">
+    <div class="row ">
+        <div class="col-md-12">
+          <label>Produto</label>
+          <input type="text" name="product" value="" id="product" class="form-control">
+        </div>
+        <div class="col-md-12">
+          <label>Preço</label>
+          <input type="text" name="price" value="" id="price" class="form-control">
+        </div>
+        <div class="col-md-12">
+          <label>URL do produto</label>
+          <input type="text" name="image" value="" id="image" class="form-control">
+        </div>
+        <div class="col-md-12 mt-4">
+          <button type="submit" class="btn btn-primary" name="button">Enviar</button>
+        </div>
+    </div>
+  </form>
+  <div class="jumbotron mt-4" id="result-container">
+    <h1 class="d-flex justify-content-center">Produtos</h1>
+    <div  class="mt-4"></div>
+      <ul id="result">
+
+      </ul>
+    <!--<button type="remove" onclick="remove()" id="remove" class="btn btn-danger"></button>-->
+  </div>
+  <div class="jumbotron mt-4" id="total-container">
+    <h1>Total: </h1>
+    <div  class="mt-4" id="total"></div>
+</div>
+
+
+{% endblock %}
+
+{% block title %}
+  Simulador
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="/js/simulator.js" charset="utf-8"></script>
+
+{% endblock %}
