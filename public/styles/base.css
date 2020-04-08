@@ -3,3 +3,7 @@ body nav div.navbar-nav a.item-menu {
     color: white;  
     font-weight: bold;
 }
+
+footer div h4.footer-title{
+    font-family: fantasy;
+}

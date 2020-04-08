@@ -12,7 +12,7 @@
         <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbTYaSH0c2k74WEH1KrI8J93AYoOJhRGE_aaYiNX_dNzTwdXOj&usqp=CAU" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="" alt="Third slide">
+        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbTYaSH0c2k74WEH1KrI8J93AYoOJhRGE_aaYiNX_dNzTwdXOj&usqp=CAU" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -24,16 +24,20 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  
 <br>
 
-<h1>Para simular um processo </h1>
-<a href="/simulator"> clique aqui.</a>
-{% endblock %}
+<h1 class="title d-flex justify-content-center">Bem vindo ao simulador didático de processos computacionais</h1>
+<div class="d-flex justify-content-center">
+  <a href="/simulator"><button type="submit" name="button" id="simulatorReference" class="btn btn-primary btn-lg mt-5">SIMULAR PROCESSO</button></a>
+</div>
+
+  {% endblock %}
 
 {% block title %}
   Página inicial
 {% endblock %}
 
 {% block script %}
-
+<link rel="stylesheet" href="/styles/index.css">
 {% endblock %}
