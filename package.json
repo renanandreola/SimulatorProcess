@@ -2,6 +2,10 @@
   "name": "simulatorprocess",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "12.16.x",
+    "npm": "6.x"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -e * server.js",
