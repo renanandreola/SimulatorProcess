@@ -1,20 +1,3 @@
-/*
-function starting(){
-    var self = this;
-    self.appName = ko.observable("Instagram");
-    self.tableMemory = ko.observable("20mb");
-    self.tableTest = ko.observable("test");
-
-    self.start = ko.observableArray([{appName: this.appName, 
-        tableMemory: this.this.tableMemory, 
-        tableTest: this.tableTest,  }]);
-}
-    
-
-
-ko.applyBindings(new starting());
-*/
-////////////////////////////////
 
 function addToCart(product) {
     var cart = JSON.parse(sessionStorage.getItem("cart"));
@@ -61,3 +44,8 @@ function addToCart(product) {
     location.reload();
     return sessionStorage.setItem("cart", JSON.stringify(cart));
     }
+
+////////////////////////
+    document.querySelector("#start").onclick = () => 
+        alert("Você clicou no botão");
+    

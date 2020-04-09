@@ -1,4 +1,21 @@
 div.apps{
     display: inline;
-    
+}
+
+div.container img.icon-image {
+    height: 110px;
+    width: 110px;
+    margin-left: 110px;
+}
+
+div.container div h5.icon-title{
+    margin-left: 120px;
+}
+
+div.container div p.icon-description{
+    margin-left: 130px;
+}
+
+div.container div a.icon-button{
+    margin-left: 130px;
 }
