@@ -1,22 +1,24 @@
 
-function addToCart(product) {
+function addToTable(process) {
     var cart = JSON.parse(sessionStorage.getItem("cart"));
     if (!cart) {
       cart = [];
     }
-    cart.push(product);
+    cart.push(process);
     sessionStorage.setItem("cart", JSON.stringify(cart));
   }
   
   $(document).ready(function () {
     $('form').submit(function () {
+        var processName = document.getElementById('processName').innerHTML;
         var productName = $('#product').val();
         var productPrice = $('#price').val();
-        var productImage = $('#image').val();
-        addToCart({
+        var memory = 50 + " MB";
+        addToTable({
+          processName: processName,
           name: productName,
           price: productPrice,
-          image: productImage,
+          memory: memory,
         });
     });
   
@@ -26,10 +28,12 @@ function addToCart(product) {
       var total = 0;
       for (var i = 0; i < 1000; i++) {
         $("#test").html(i);
-        $("#result").append("<li id="+i+"> → Produto: " + cart[i].name + "</br>" +"→ Preço: "+"R$" + cart[i].price + "</br>" + "<img src='" + cart[i].image + "' width='150px' height='150px'></li>" + "</br>" + "<button onclick='excluir("+ i +")' type='button' id='button" + i +"'>Excluir Produto</button>" + "</br>"+ "</br>");
-        total += parseInt(cart[i].price);
-  
-        $("#total").html("R$: " + total);
+        $("#result").append("<li class='list-group-item list-group-item-dark d-flex justify-content-center' id=" 
+                            + i + ">Processo: " 
+                            + cart[i].processName + " " 
+                            +" Memória utilizada: " + cart[i].memory + "&nbsp; &nbsp" 
+                            + "<button class='btn btn-danger' onclick='excluir("+ i +")' type='button' id='button" 
+                            + i +"'>Finalizar Processo</button></li>" + "</br>");
       }
     }
   });
@@ -46,6 +50,6 @@ function addToCart(product) {
     }
 
 ////////////////////////
-    document.querySelector("#start").onclick = () => 
-        alert("Você clicou no botão");
+    
+        
     
