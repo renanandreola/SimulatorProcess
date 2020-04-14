@@ -6,4 +6,34 @@ body nav div.navbar-nav a.item-menu {
 
 footer div h4.footer-title{
     font-family: fantasy;
+    color: black;
+}
+
+footer {
+    background-color: rgb(231, 247, 255);
+}
+
+footer div.col1 p.pFooter {
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+
+footer div.col2 p.pFooter {
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+
+footer div.col3 p.pFooter {
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+
+footer div.footerLogo p.small{
+    font-weight: bolder;
 }
