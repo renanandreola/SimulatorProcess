@@ -43,6 +43,3 @@ app.get('/about', (req, res) => {
     res.render('about.html')
 });
 
-app.post('/simulator', (req, res) => {
-    res.render('simulator.html')
-});

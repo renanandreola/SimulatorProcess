@@ -1,4 +1,4 @@
-
+/*
 function addToTable(process) {
     var cart = JSON.parse(sessionStorage.getItem("cart"));
     if (!cart) {
@@ -48,8 +48,37 @@ function addToTable(process) {
     location.reload();
     return sessionStorage.setItem("cart", JSON.stringify(cart));
     }
-
+*/
 ////////////////////////
-    
-        
-    
+var lineOne = $("#lineOne");
+var lineTwo = $("#lineTwo");
+var lineThree = $("#lineThree");
+var lineFour = $("#lineFour");
+var lineFive = $("#lineFive");
+var lineSix = $("#lineSix");
+
+$("#startInstagram").on("click", function(){
+  lineOne.toggle();
+});
+
+$("#startDiscord").on("click", function(){
+  lineTwo.toggle();
+});
+
+$("#startVSCode").on("click", function(){
+  lineThree.toggle();
+});
+
+$("#startExplorer").on("click", function(){
+  lineFour.toggle();
+});
+
+$("#startGoogle").on("click", function(){
+  lineFive.toggle();
+});
+
+$("#startExcel").on("click", function(){
+  lineSix.toggle();
+});
+
+

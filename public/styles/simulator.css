@@ -19,3 +19,27 @@ div.container div p.icon-description{
 div.container div a.icon-button{
     margin-left: 130px;
 }
+
+table tbody tr.line1 {
+    display: none;
+}
+
+table tbody tr.line2 {
+    display: none;
+}
+
+table tbody tr.line3 {
+    display: none;
+}
+
+table tbody tr.line4 {
+    display: none;
+}
+
+table tbody tr.line5 {
+    display: none;
+}
+
+table tbody tr.line6 {
+    display: none;
+}
