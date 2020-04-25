@@ -5,20 +5,63 @@ div.apps{
 div.container img.icon-image {
     height: 110px;
     width: 110px;
-    margin-left: 110px;
+   
 }
 
-div.container div h5.icon-title{
-    margin-left: 120px;
+div.container div h5.icon-title-insta{
+    margin-left: 10px;
 }
 
-div.container div p.icon-description{
-    margin-left: 130px;
+div.container div h5.icon-title-discord{
+    margin-left: 20px;
 }
 
-div.container div a.icon-button{
-    margin-left: 130px;
+div.container div h5.icon-title-vscode{
+    margin-left: 35px;
 }
+
+div.container div h5.icon-title-explorer{
+    margin-left: 15px;
+}
+
+div.container div h5.icon-title-google{
+    margin-left: 20px;
+}
+
+div.container div h5.icon-title-excel{
+    margin-left: 40px;
+}
+
+
+div button.insta{
+   margin-left: 22px;
+   margin-top: 47px;
+}
+
+div button.discord{
+    margin-left: 22px;
+    margin-top: 47px;
+}
+
+div button.vscode{
+    margin-left: 30px;
+}
+
+div button.explorer{
+    margin-left: 22px;
+    margin-top: 24px;
+}
+
+div button.google{
+    margin-left: 22px;
+    margin-top: 24px;
+}
+
+div button.excel{
+    margin-left: 30px;
+    margin-top: 47px;
+ }
+
 
 table tbody tr.line1 {
     display: none;

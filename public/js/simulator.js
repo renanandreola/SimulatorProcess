@@ -50,6 +50,7 @@ function addToTable(process) {
     }
 */
 ////////////////////////
+
 var lineOne = $("#lineOne");
 var lineTwo = $("#lineTwo");
 var lineThree = $("#lineThree");
@@ -80,5 +81,37 @@ $("#startGoogle").on("click", function(){
 $("#startExcel").on("click", function(){
   lineSix.toggle();
 });
+
+var stopProcess1 = $("#stopProcessLineOne");
+var stopProcess2 = $("#stopProcessLineTwo");
+var stopProcess3 = $("#stopProcessLineThree");
+var stopProcess4 = $("#stopProcessLineFour");
+var stopProcess5 = $("#stopProcessLineFive");
+var stopProcess6 = $("#stopProcessLineSix");
+
+$("#stopProcessLineOne").on("click", function(){
+  lineOne.toggle();
+});
+
+$("#stopProcessLineTwo").on("click", function(){
+  lineTwo.toggle();
+});
+
+$("#stopProcessLineThree").on("click", function(){
+  lineThree.toggle();
+});
+
+$("#stopProcessLineFour").on("click", function(){
+  lineFour.toggle();
+});
+
+$("#stopProcessLineFive").on("click", function(){
+  lineFive.toggle();
+});
+
+$("#stopProcessLineSix").on("click", function(){
+  lineSix.toggle();
+});
+
 
 
