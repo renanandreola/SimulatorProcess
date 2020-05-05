@@ -37,3 +37,8 @@ footer div.col3 p.pFooter {
 footer div.footerLogo p.small{
     font-weight: bolder;
 }
+
+footer {
+    background-image: url(https://pngimage.net/wp-content/uploads/2018/06/footer-images-png-2.png);
+    background-repeat: no-repeat;
+}

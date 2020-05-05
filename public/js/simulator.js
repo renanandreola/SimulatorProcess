@@ -51,6 +51,7 @@ function addToTable(process) {
 */
 ////////////////////////
 
+// Busca botoes de Iniciar no DOM
 var lineOne = $("#lineOne");
 var lineTwo = $("#lineTwo");
 var lineThree = $("#lineThree");
@@ -58,30 +59,38 @@ var lineFour = $("#lineFour");
 var lineFive = $("#lineFive");
 var lineSix = $("#lineSix");
 
+// Valida o clique no botao Iniciar para criar linha na tabela
 $("#startInstagram").on("click", function(){
   lineOne.toggle();
+    $('#startInstagram').addClass(' nav-link disabled');
 });
 
 $("#startDiscord").on("click", function(){
   lineTwo.toggle();
+    $('#startDiscord').addClass(' nav-link disabled');
 });
 
 $("#startVSCode").on("click", function(){
   lineThree.toggle();
+    $('#startVSCode').addClass(' nav-link disabled');
 });
 
 $("#startExplorer").on("click", function(){
   lineFour.toggle();
+    $('#startExplorer').addClass(' nav-link disabled');
 });
 
 $("#startGoogle").on("click", function(){
   lineFive.toggle();
+    $('#startGoogle').addClass(' nav-link disabled');
 });
 
 $("#startExcel").on("click", function(){
   lineSix.toggle();
+    $('#startExcel').addClass(' nav-link disabled');
 });
 
+// Busca botoes de Finalziar processo no DOM
 var stopProcess1 = $("#stopProcessLineOne");
 var stopProcess2 = $("#stopProcessLineTwo");
 var stopProcess3 = $("#stopProcessLineThree");
@@ -89,28 +98,35 @@ var stopProcess4 = $("#stopProcessLineFour");
 var stopProcess5 = $("#stopProcessLineFive");
 var stopProcess6 = $("#stopProcessLineSix");
 
+// Valida o clique no botao para remover a linha da tabela
 $("#stopProcessLineOne").on("click", function(){
   lineOne.toggle();
+    $('#startInstagram').removeClass('nav-link disabled');
 });
 
 $("#stopProcessLineTwo").on("click", function(){
   lineTwo.toggle();
+  $('#startDiscord').removeClass('nav-link disabled');
 });
 
 $("#stopProcessLineThree").on("click", function(){
   lineThree.toggle();
+  $('#startVSCode').removeClass('nav-link disabled');
 });
 
 $("#stopProcessLineFour").on("click", function(){
   lineFour.toggle();
+  $('#startExplorer').removeClass('nav-link disabled');
 });
 
 $("#stopProcessLineFive").on("click", function(){
   lineFive.toggle();
+  $('#startGoogle').removeClass('nav-link disabled');
 });
 
 $("#stopProcessLineSix").on("click", function(){
   lineSix.toggle();
+  $('#startExcel').removeClass('nav-link disabled');
 });
 
 
