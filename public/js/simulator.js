@@ -72,7 +72,7 @@ $("#startInstagram").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
       Notification.requestPermission(function(status){
         let n = new Notification('Inicialização de processo',{
-          body:'tresttwsete',
+          body:'tresttwseteasdasd',
           icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
         });
       });
