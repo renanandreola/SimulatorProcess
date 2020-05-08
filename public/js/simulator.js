@@ -59,10 +59,33 @@ var lineFour = $("#lineFour");
 var lineFive = $("#lineFive");
 var lineSix = $("#lineSix");
 
+var line12 = $("#line12");
+var line41 = $("#line41");
+
+var rsBtnInsta = $("#restartInstagram");
+var rsBtnExplorer = $("#restartExplorer");
+
+
 // Valida o clique no botao Iniciar para criar linha na tabela
 $("#startInstagram").on("click", function(){
+
+  if(window.Notification&&Notification.permission!=="denied"){
+      Notification.requestPermission(function(status){
+        let n = new Notification('Inicialização de processo',{
+          body:'tresttwsete',
+          icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+        });
+      });
+  };
   lineOne.toggle();
     $('#startInstagram').addClass(' nav-link disabled');
+    
+    rsBtnInsta.toggle();
+});
+
+$("#restartInstagram").on("click", function(){
+  line12.toggle();
+  $('#restartInstagram').addClass(' nav-link disabled');
 });
 
 $("#startDiscord").on("click", function(){
@@ -78,6 +101,13 @@ $("#startVSCode").on("click", function(){
 $("#startExplorer").on("click", function(){
   lineFour.toggle();
     $('#startExplorer').addClass(' nav-link disabled');
+
+    rsBtnExplorer.toggle();
+});
+
+$("#restartExplorer").on("click", function(){
+  line41.toggle();
+  $('#restartExplorer').addClass(' nav-link disabled');
 });
 
 $("#startGoogle").on("click", function(){
@@ -127,6 +157,19 @@ $("#stopProcessLineFive").on("click", function(){
 $("#stopProcessLineSix").on("click", function(){
   lineSix.toggle();
   $('#startExcel').removeClass('nav-link disabled');
+});
+
+
+
+
+$("#stopProcessRsInstagram").on("click", function(){
+  line12.toggle();
+  $('#restartInstagram').removeClass('nav-link disabled');
+});
+
+$("#stopProcessRsExplorer").on("click", function(){
+  line41.toggle();
+  $('#restartExplorer').removeClass('nav-link disabled');
 });
 
 

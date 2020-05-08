@@ -9,7 +9,7 @@ div.container img.icon-image {
 }
 
 div.container div h5.icon-title-insta{
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 div.container div h5.icon-title-discord{
@@ -84,5 +84,21 @@ table tbody tr.line5 {
 }
 
 table tbody tr.line6 {
+    display: none;
+}
+
+button.restartInsta {
+    display: none;
+}
+
+table tbody tr.line12 {
+    display: none;
+}
+
+button.restartExplorer {
+    display: none;
+}
+
+table tbody tr.line41 {
     display: none;
 }
