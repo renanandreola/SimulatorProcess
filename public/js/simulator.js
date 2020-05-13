@@ -198,6 +198,7 @@ var stopProcess6 = $("#stopProcessLineSix");
 $("#stopProcessLineOne").on("click", function(){
   lineOne.toggle();
     $('#startInstagram').removeClass('nav-link disabled');
+    $('#restartInstagram').toggle();
 });
 
 $("#stopProcessLineTwo").on("click", function(){
@@ -213,6 +214,7 @@ $("#stopProcessLineThree").on("click", function(){
 $("#stopProcessLineFour").on("click", function(){
   lineFour.toggle();
   $('#startExplorer').removeClass('nav-link disabled');
+  $('#restartExplorer').toggle();
 });
 
 $("#stopProcessLineFive").on("click", function(){

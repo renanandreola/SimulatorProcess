@@ -23,6 +23,23 @@ document.getElementById("lineCPU5").innerHTML = "< " + "0." + nCPU5;
 var nCPU6 = Math.floor(Math.random()* (45 - 17) + 17);
 document.getElementById("lineCPU6").innerHTML = "< " + "0." + nCPU6;
 
+//////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+
+/* ESSE JEITO REPETE O MESMO NUMERO EM TODA TABELA
+var num = Math.floor(Math.random()* (72 - 41) + 41);
+
+document.getElementById("lineCPU1").innerHTML = "< " + "0." + num;
+document.getElementById("lineCPU12").innerHTML = "< " + "0." + num;
+document.getElementById("lineCPU2").innerHTML = "< " + "0." + num;
+document.getElementById("lineCPU3").innerHTML = "< " + "0." + num;
+document.getElementById("lineCPU4").innerHTML = "< " + "0." + num;
+document.getElementById("lineCPU42").innerHTML = "< " + "0." + num;
+document.getElementById("lineCPU5").innerHTML = "< " + "0." + num;
+document.getElementById("lineCPU6").innerHTML = "< " + "0." + num;
+*/
+
 //gerando numeros aleatórios PRIVATE BYTES // cria numero aleatorio para cada espaço
 
 var nPB1 = Math.floor(Math.random()* (50000 - 20000) + 20000);

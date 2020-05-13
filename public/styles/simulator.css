@@ -5,7 +5,6 @@ div.apps{
 div.container img.icon-image {
     height: 110px;
     width: 110px;
-   
 }
 
 div.container div h5.icon-title-insta{
@@ -22,6 +21,7 @@ div.container div h5.icon-title-vscode{
 
 div.container div h5.icon-title-explorer{
     margin-left: 15px;
+    padding-left: 15px;
 }
 
 div.container div h5.icon-title-google{
@@ -36,32 +36,37 @@ div.container div h5.icon-title-excel{
 div button.insta{
    margin-left: 22px;
    margin-top: 47px;
+   display: inline-block;
 }
 
 div button.discord{
     margin-left: 22px;
     margin-top: 47px;
+    display: inline-block;
 }
 
 div button.vscode{
     margin-left: 30px;
+    display: inline-block;
+
 }
 
 div button.explorer{
     margin-left: 22px;
-    margin-top: 24px;
+    display: inline-block;
 }
 
 div button.google{
     margin-left: 22px;
     margin-top: 24px;
+    display: inline-block;
 }
 
 div button.excel{
     margin-left: 30px;
     margin-top: 47px;
- }
-
+    display: inline-block;
+}
 
 table tbody tr.line1 {
     display: none;
@@ -89,16 +94,22 @@ table tbody tr.line6 {
 
 button.restartInsta {
     display: none;
-}
-
-table tbody tr.line12 {
-    display: none;
+    margin-left: 13px;
+    margin-top: 10px;
 }
 
 button.restartExplorer {
     display: none;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+table tbody tr.line12 {
+    display: none;
+    background-color: rgb(177, 177, 177);
 }
 
 table tbody tr.line41 {
     display: none;
+    background-color: rgb(177, 177, 177);
 }
