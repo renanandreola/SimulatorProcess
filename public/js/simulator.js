@@ -7,7 +7,6 @@ function addToTable(process) {
     cart.push(process);
     sessionStorage.setItem("cart", JSON.stringify(cart));
   }
-  
   $(document).ready(function () {
     $('form').submit(function () {
         var processName = document.getElementById('processName').innerHTML;
@@ -21,7 +20,6 @@ function addToTable(process) {
           memory: memory,
         });
     });
-  
     var cart = sessionStorage.getItem("cart");
     if (cart !== null) {
       cart = JSON.parse(cart);
@@ -37,7 +35,6 @@ function addToTable(process) {
       }
     }
   });
-  
   function excluir(value) {
     var cart = JSON.parse(sessionStorage.getItem("cart"));
     console.info(cart)
@@ -49,7 +46,7 @@ function addToTable(process) {
     return sessionStorage.setItem("cart", JSON.stringify(cart));
     }
 */
-////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Busca botoes de Iniciar no DOM
 var lineOne = $("#lineOne");
@@ -68,54 +65,123 @@ var rsBtnExplorer = $("#restartExplorer");
 
 // Valida o clique no botao Iniciar para criar linha na tabela
 $("#startInstagram").on("click", function(){
-
+//notificação do clique
   if(window.Notification&&Notification.permission!=="denied"){
       Notification.requestPermission(function(status){
         let n = new Notification('Inicialização de processo',{
-          body:'tresttwseteasdasd',
+          body:'Você simulou a inicialização do programa Word, ou seja, representa um software em execução.',
           icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
         });
       });
   };
+//fim da notificação
   lineOne.toggle();
     $('#startInstagram').addClass(' nav-link disabled');
-    
     rsBtnInsta.toggle();
 });
 
 $("#restartInstagram").on("click", function(){
+  //notificação do clique
+  if(window.Notification&&Notification.permission!=="denied"){
+    Notification.requestPermission(function(status){
+      let n = new Notification('Inicialização de processo',{
+        body:'Você simulou a inicialização do programa Word. Duplicar o processo significa que você abriu novamente o mesmo programa.',
+        icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+      });
+    });
+};
+//fim da notificação
   line12.toggle();
   $('#restartInstagram').addClass(' nav-link disabled');
 });
 
 $("#startDiscord").on("click", function(){
+  //notificação do clique
+  if(window.Notification&&Notification.permission!=="denied"){
+    Notification.requestPermission(function(status){
+      let n = new Notification('Inicialização de processo',{
+        body:'Você simulou a inicialização do programa Discord, ou seja, representa um software em execução.',
+        icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+      });
+    });
+};
+//fim da notificação
   lineTwo.toggle();
     $('#startDiscord').addClass(' nav-link disabled');
 });
 
 $("#startVSCode").on("click", function(){
+  //notificação do clique
+  if(window.Notification&&Notification.permission!=="denied"){
+    Notification.requestPermission(function(status){
+      let n = new Notification('Inicialização de processo',{
+        body:'Você simulou a inicialização do programa Visual Studio Code, ou seja, representa um software em execução.',
+        icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+      });
+    });
+};
+//fim da notificação
   lineThree.toggle();
     $('#startVSCode').addClass(' nav-link disabled');
 });
 
 $("#startExplorer").on("click", function(){
+  //notificação do clique
+  if(window.Notification&&Notification.permission!=="denied"){
+    Notification.requestPermission(function(status){
+      let n = new Notification('Inicialização de processo',{
+        body:'Você simulou a inicialização do Bloco de Notas, ou seja, representa um software em execução.',
+        icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+      });
+    });
+};
+//fim da notificação
   lineFour.toggle();
     $('#startExplorer').addClass(' nav-link disabled');
-
     rsBtnExplorer.toggle();
 });
 
 $("#restartExplorer").on("click", function(){
+  //notificação do clique
+  if(window.Notification&&Notification.permission!=="denied"){
+    Notification.requestPermission(function(status){
+      let n = new Notification('Inicialização de processo',{
+        body:'Você simulou a inicialização do Bloco de Notas. Duplicar o processo significa que você abriu novamente o mesmo programa.',
+        icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+      });
+    });
+};
+//fim da notificação
   line41.toggle();
   $('#restartExplorer').addClass(' nav-link disabled');
 });
 
 $("#startGoogle").on("click", function(){
+ //notificação do clique
+ if(window.Notification&&Notification.permission!=="denied"){
+  Notification.requestPermission(function(status){
+    let n = new Notification('Inicialização de processo',{
+      body:'Você simulou a inicialização do Google, ou seja, representa um software em execução.',
+      icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+    });
+  });
+};
+//fim da notificação
   lineFive.toggle();
     $('#startGoogle').addClass(' nav-link disabled');
 });
 
 $("#startExcel").on("click", function(){
+  //notificação do clique
+  if(window.Notification&&Notification.permission!=="denied"){
+    Notification.requestPermission(function(status){
+      let n = new Notification('Inicialização de processo',{
+        body:'Você simulou a inicialização do Excel, ou seja, representa um software em execução.',
+        icon: 'https://info.gupy.io/hs-fs/hubfs/inteligencia-artificial-rh.png?width=256&name=inteligencia-artificial-rh.png'
+      });
+    });
+};
+//fim da notificação
   lineSix.toggle();
     $('#startExcel').addClass(' nav-link disabled');
 });
@@ -159,9 +225,7 @@ $("#stopProcessLineSix").on("click", function(){
   $('#startExcel').removeClass('nav-link disabled');
 });
 
-
-
-
+// parar processos duplicados
 $("#stopProcessRsInstagram").on("click", function(){
   line12.toggle();
   $('#restartInstagram').removeClass('nav-link disabled');
@@ -171,6 +235,4 @@ $("#stopProcessRsExplorer").on("click", function(){
   line41.toggle();
   $('#restartExplorer').removeClass('nav-link disabled');
 });
-
-
 
