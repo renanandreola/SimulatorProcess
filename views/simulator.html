@@ -67,6 +67,8 @@
       <div class="col-4">
         <button type="submit" class="discord btn btn-primary" name="button" id="startDiscord">Iniciar</button>
       </div>
+      <br>
+        <button type="submit" class="restartDiscord btn btn-success" name="button" id="restartDiscord">Duplicar processo</button>
     </div>
 
     <div class="col-md-2 mx-auto">
@@ -79,6 +81,8 @@
       </div>
       <div class="col-4">
         <button type="submit" class="vscode btn btn-primary" name="button" id="startVSCode">Iniciar</button>
+        <br>
+        <button type="submit" class="restartVSCode btn btn-success" name="button" id="restartVSCode">Duplicar processo</button>
       </div>
     </div>
 
@@ -109,6 +113,8 @@
       </div>
       <div class="col-4">
         <button type="submit" class="google btn btn-primary" name="button" id="startGoogle">Iniciar</button>
+        <br>
+        <button type="submit" class="restartGoogle btn btn-success" name="button" id="restartGoogle">Duplicar processo</button>
       </div>
     </div>
 
@@ -121,6 +127,8 @@
       </div>
       <div class="col-4">
         <button type="submit" class="excel btn btn-primary" name="button" id="startExcel">Iniciar</button>
+        <br>
+        <button type="submit" class="restartExcel btn btn-success" name="button" id="restartExcel">Duplicar processo</button>
       </div>
     </div>
 
@@ -155,51 +163,61 @@
     <tr class="line1" id="lineOne">
       <td title="O Word esta em simulação de execução"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Microsoft_Office_Word_%282018%E2%80%93present%29.svg/826px-Microsoft_Office_Word_%282018%E2%80%93present%29.svg.png"
           width="20px" height="20px" alt=""> Word</td>
-      <td id="lineCPU1">0.01</td>
-      <td id="linePB1">6.000 K</td>
-      <td id="lineWS1">10.000 K</td>
-      <td id="linePID1">120</td>
+      <td id="lineCPU1">----</td>
+      <td id="linePB1">----</td>
+      <td id="lineWS1">----</td>
+      <td id="linePID1">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineOne">Encerrar Processo</button></td>
     </tr>
     <tr class="line12" id="line12">
       <td title="O Word esta em simulação de execução, equivale a 2 programas iguais"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Microsoft_Office_Word_%282018%E2%80%93present%29.svg/826px-Microsoft_Office_Word_%282018%E2%80%93present%29.svg.png"
           width="20px" height="20px" alt=""> Word</td>
-      <td id="lineCPU12">0.01</td>
-      <td id="linePB12">6.000 K</td>
-      <td id="lineWS12">10.000 K</td>
-      <td id="linePID12">120</td>
+      <td id="lineCPU12">----</td>
+      <td id="linePB12">----</td>
+      <td id="lineWS12">----</td>
+      <td id="linePID12">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessRsInstagram">Encerrar Processo</button></td>
     </tr>
     <tr class="line2" id="lineTwo">
       <td title="O Discord esta em simulação de execução"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png"
           width="20px" height="20px" alt=""> Discord</td>
-      <td id="lineCPU2">0.01</td>
-      <td id="linePB2">6.000 K</td>
-      <td id="lineWS2">10.000 K</td>
-      <td id="linePID2">120</td>
+      <td id="lineCPU2">----</td>
+      <td id="linePB2">----</td>
+      <td id="lineWS2">----</td>
+      <td id="linePID2">----</td>
       <td>Discord Inc</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineTwo">Encerrar Processo</button></td>
     </tr>
     <tr class="line3" id="lineThree">
       <td title="O Visual Studio Code esta em simulação de execução"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png" width="20px"
           height="20px" alt=""> VS Code</td>
-      <td id="lineCPU3">0.01</td>
-      <td id="linePB3">6.000 K</td>
-      <td id="lineWS3">10.000 K</td>
-      <td id="linePID3">120</td>
+      <td id="lineCPU3">----</td>
+      <td id="linePB3">----</td>
+      <td id="lineWS3">----</td>
+      <td id="linePID3">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineThree">Encerrar Processo</button></td>
+    </tr>
+    <tr class="line32" id="line32">
+      <td title="O Visual Studio Code esta em simulação de execução"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png" width="20px"
+          height="20px" alt=""> VS Code</td>
+      <td id="lineCPU32">----</td>
+      <td id="linePB32">----</td>
+      <td id="lineWS32">----</td>
+      <td id="linePID32">----</td>
+      <td>Microsoft Corporation</td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsVSCode">Encerrar Processo</button></td>
     </tr>
     <tr class="line4" id="lineFour">
       <td title="O Bloco de Notas esta em simulação de execução"><img
           src="https://upload.wikimedia.org/wikipedia/pt/5/51/Logo_Bloco_de_Notas-pt.PNG"
           width="20px" height="20px" alt=""> Bloco de notas</td>
-      <td id="lineCPU4">0.01</td>
-      <td id="linePB4">6.000 K</td>
-      <td id="lineWS4">10.000 K</td>
-      <td id="linePID4">120</td>
+      <td id="lineCPU4">----</td>
+      <td id="linePB4">----</td>
+      <td id="lineWS4">----</td>
+      <td id="linePID4">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineFour">Encerrar Processo</button></td>
     </tr>
@@ -207,10 +225,10 @@
       <td title="O Bloco de Notas esta em simulação de execução, equivale a 2 programas iguais"><img
           src="https://upload.wikimedia.org/wikipedia/pt/5/51/Logo_Bloco_de_Notas-pt.PNG"
           width="20px" height="20px" alt=""> Bloco de notas</td>
-      <td id="lineCPU42">0.01</td>
-      <td id="linePB42">6.000 K</td>
-      <td id="lineWS42">10.000 K</td>
-      <td id="linePID42">120</td>
+      <td id="lineCPU42">----</td>
+      <td id="linePB42">----</td>
+      <td id="lineWS42">----</td>
+      <td id="linePID42">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessRsExplorer">Encerrar Processo</button></td>
     </tr>
@@ -218,22 +236,43 @@
       <td title="O Google esta em simulação de execução"><img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1024px-Google_Chrome_icon_%28September_2014%29.svg.png"
           width="20px" height="20px" alt=""> Google Chrome</td>
-      <td id="lineCPU5">0.01</td>
-      <td id="linePB5">6.000 K</td>
-      <td id="lineWS5">10.000 K</td>
-      <td id="linePID5">120</td>
+      <td id="lineCPU5">----</td>
+      <td id="linePB5">----</td>
+      <td id="lineWS5">----</td>
+      <td id="linePID5">----</td>
       <td>Google LLC</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineFive">Encerrar Processo</button></td>
+    </tr>
+    <tr class="line52" id="line52">
+      <td title="O Google esta em simulação de execução"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1024px-Google_Chrome_icon_%28September_2014%29.svg.png"
+          width="20px" height="20px" alt=""> Google Chrome</td>
+      <td id="lineCPU52">----</td>
+      <td id="linePB52">----</td>
+      <td id="lineWS52">----</td>
+      <td id="linePID52">----</td>
+      <td>Google LLC</td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsGoogle">Encerrar Processo</button></td>
     </tr>
     <tr class="line6" id="lineSix">
       <td title="O Excel esta em simulação de execução"><img src="https://img.icons8.com/color/480/microsoft-excel-2019--v1.png" width="20px" height="20px" alt="">
         Excel</td>
-      <td id="lineCPU6">0.01</td>
-      <td id="linePB6">6.000 K</td>
-      <td id="lineWS6">10.000 K</td>
-      <td id="linePID6">120</td>
+      <td id="lineCPU6">----</td>
+      <td id="linePB6">----</td>
+      <td id="lineWS6">----</td>
+      <td id="linePID6">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineSix">Encerrar Processo</button></td>
+    </tr>
+    <tr class="line62" id="line62">
+      <td title="O Excel esta em simulação de execução"><img src="https://img.icons8.com/color/480/microsoft-excel-2019--v1.png" width="20px" height="20px" alt="">
+        Excel</td>
+      <td id="lineCPU62">----</td>
+      <td id="linePB62">----</td>
+      <td id="lineWS62">----</td>
+      <td id="linePID62">----</td>
+      <td>Microsoft Corporation</td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsExcel">Encerrar Processo</button></td>
     </tr>
   </tbody>
 </table>

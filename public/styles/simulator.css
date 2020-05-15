@@ -98,9 +98,33 @@ button.restartInsta {
     margin-top: 10px;
 }
 
+button.restartDiscord {
+    display: none;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
 button.restartExplorer {
     display: none;
     margin-left: 13px;
+    margin-top: 10px;
+}
+
+button.restartVSCode {
+    display: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+button.restartGoogle {
+    display: none;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+button.restartExcel {
+    display: none;
+    margin-left: 22px;
     margin-top: 10px;
 }
 
@@ -109,7 +133,22 @@ table tbody tr.line12 {
     background-color: rgb(177, 177, 177);
 }
 
+table tbody tr.line32 {
+    display: none;
+    background-color: rgb(177, 177, 177);
+}
+
 table tbody tr.line41 {
+    display: none;
+    background-color: rgb(177, 177, 177);
+}
+
+table tbody tr.line52 {
+    display: none;
+    background-color: rgb(177, 177, 177);
+}
+
+table tbody tr.line62 {
     display: none;
     background-color: rgb(177, 177, 177);
 }
