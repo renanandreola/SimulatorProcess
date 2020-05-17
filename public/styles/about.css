@@ -1,0 +1,42 @@
+.title{
+    font-family: fantasy;
+    font-size: 30px;
+    color: #0d345d;
+}
+
+.coluna1 {
+    float: left;
+    height: 400px;
+}
+
+.coluna2 {
+    float: left;
+    height: 400px;
+}
+
+.paragrafo1{
+    text-align: justify;
+}
+
+.paragrafo2{
+    text-align: justify;
+}
+
+.image1 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image3 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
