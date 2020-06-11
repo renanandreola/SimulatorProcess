@@ -100,32 +100,42 @@ button.restartInsta {
 
 button.restartDiscord {
     display: none;
-    margin-left: 13px;
+    margin-left: 30px;
     margin-top: 10px;
+    height: 65px;
+    width: 90px;
 }
 
 button.restartExplorer {
     display: none;
     margin-left: 13px;
     margin-top: 10px;
+    height: 65px;
+    width: 90px;
 }
 
 button.restartVSCode {
     display: none;
     margin-left: 20px;
     margin-top: 10px;
+    height: 65px;
+    width: 90px;
 }
 
 button.restartGoogle {
     display: none;
     margin-left: 15px;
     margin-top: 10px;
+    height: 65px;
+    width: 90px;
 }
 
 button.restartExcel {
     display: none;
     margin-left: 22px;
     margin-top: 10px;
+    height: 65px;
+    width: 90px;
 }
 
 table tbody tr.line12 {
