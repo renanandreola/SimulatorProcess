@@ -234,7 +234,7 @@ $("#stopProcessLineOne").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
-        body:'Você simulou a finalizção do programa Word, ou seja, -----------------------',
+        body:'Você simulou a finalizção do programa Word, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -251,7 +251,7 @@ $("#stopProcessLineTwo").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
-        body:'Você simulou a finalizção do programa Discord, ou seja, -----------------------',
+        body:'Você simulou a finalizção do programa Discord, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -268,7 +268,7 @@ $("#stopProcessLineThree").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
-        body:'Você simulou a finalizção do Visual Studio Code, ou seja, -----------------------',
+        body:'Você simulou a finalizção do Visual Studio Code, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -285,7 +285,7 @@ $("#stopProcessLineFour").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
-        body:'Você simulou a finalizção do Bloco de Notas, ou seja, -----------------------',
+        body:'Você simulou a finalizção do Bloco de Notas, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -302,7 +302,7 @@ $("#stopProcessLineFive").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
-        body:'Você simulou a finalizção do Google Chrome, ou seja, -----------------------',
+        body:'Você simulou a finalizção do Google Chrome, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -319,7 +319,7 @@ $("#stopProcessLineSix").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
-        body:'Você simulou a finalizção do programa Excel, ou seja, -----------------------',
+        body:'Você simulou a finalizção do programa Excel, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -337,7 +337,7 @@ $("#stopProcessRsInstagram").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
-        body:'Você simulou a finalizção da duplicação do programa Word, ou seja, -----------------------',
+        body:'Você simulou a finalizção da duplicação do programa Word, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -353,7 +353,7 @@ $("#stopProcessRsVSCode").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
-        body:'Você simulou a finalizção da duplicação do Visual Studio Code, ou seja, -----------------------',
+        body:'Você simulou a finalizção da duplicação do Visual Studio Code, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -369,7 +369,7 @@ $("#stopProcessRsExplorer").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
-        body:'Você simulou a finalizção da duplicação do Bloco de Notas, ou seja, -----------------------',
+        body:'Você simulou a finalizção da duplicação do Bloco de Notas, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -385,7 +385,7 @@ $("#stopProcessRsGoogle").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
-        body:'Você simulou a finalizção da duplicação do Google Chrome, ou seja, -----------------------',
+        body:'Você simulou a finalizção da duplicação do Google Chrome, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
@@ -401,7 +401,7 @@ $("#stopProcessRsExcel").on("click", function(){
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
-        body:'Você simulou a finalizção da duplicação do programa Exel, ou seja, -----------------------',
+        body:'Você simulou a finalizção da duplicação do programa Exel, ou seja, o processo finalizou',
         icon: 'https://images.emojiterra.com/google/android-pie/512px/274c.png'
       });
     });
