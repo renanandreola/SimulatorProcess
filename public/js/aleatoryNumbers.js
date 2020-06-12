@@ -139,6 +139,9 @@ function pidNumbers(){
     var nPID3 = Math.floor(Math.random()* (10000 - 1000) + 1000);
     document.getElementById("linePID3").innerHTML = nPID3;
 
+    var nPID32 = Math.floor(Math.random()* (10000 - 1000) + 1000);
+    document.getElementById("linePID32").innerHTML = nPID32;
+
     var nPID4 = Math.floor(Math.random()* (4500 - 3200) + 3200);
     document.getElementById("linePID4").innerHTML = nPID4;
 

@@ -3,42 +3,8 @@
 
 
 {% block content %}
-<!--
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://www.termineseusestudos.com.br/wp-content/uploads/2020/01/Instagram-%C3%ADcone.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Instagram</h5>
-    <p class="card-text">Ao clicar voce iniciara um procesoi auisssiaushd</p>
-    <a href="#" class="btn btn-primary" data-bind="click: start">Inicar</a>
-  </div>
-</div>
-
-
-
-<div class="box-body no-padding">
-  <div class="box">
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th>Aplicativo</th>
-          <th>Memoria utilizada</th>
-          <th>teste</th>
-        </tr>
-      </thead>
-      
-      <tbody data-bind="foreach: tableUsers">
-          <tr>
-            <td class="table-info" data-bind="text: appName"></td>
-              <td class="table-info" data-bind="text: tableMemory"></td>
-              <td class="table-info" data-bind="text: tableTest"></td>
-          </tr>
-      </tbody>
-      
-    </table>
-  </div>
-   /.box-body -->
+<!-- ABA 'SIMULADOR' ONDE SE ENCONTRAM OS PROGRAMAS EM EXECUÇÃO -->
 <br>
-
 <div class="container">
   <div class="row">
     <div class="col-md-2 mx-auto">
@@ -151,62 +117,62 @@
   <thead>
     <tr>
       <th title="Nomes dos processos" scope="col">Process</th>
-      <th scope="col">CPU</th>
-      <th scope="col">Private Bytes</th>
-      <th scope="col">Working Set</th>
-      <th scope="col">PID</th>
+      <th title="Consulte a aba SOBRE para saber mais" scope="col">CPU</th>
+      <th title="Consulte a aba SOBRE para saber mais" scope="col">Private Bytes</th>
+      <th title="Consulte a aba SOBRE para saber mais" scope="col">Working Set</th>
+      <th title="Consulte a aba SOBRE para saber mais" scope="col">PID</th>
       <th scope="col">Company Name</th>
-      <th>Encerrar Processo</th>
+      <th title="Ao clicar o processo irá finalziar" >Encerrar Processo</th>
     </tr>
   </thead>
   <tbody>
     <tr class="line1" id="lineOne">
       <td title="O Word esta em simulação de execução"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Microsoft_Office_Word_%282018%E2%80%93present%29.svg/826px-Microsoft_Office_Word_%282018%E2%80%93present%29.svg.png"
           width="20px" height="20px" alt=""> Word</td>
-      <td id="lineCPU1">----</td>
-      <td id="linePB1">----</td>
-      <td id="lineWS1">----</td>
-      <td id="linePID1">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU1">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB1">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS1">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID1">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineOne">Encerrar Processo</button></td>
     </tr>
     <tr class="line12" id="line12">
-      <td title="O Word esta em simulação de execução, equivale a 2 programas iguais"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Microsoft_Office_Word_%282018%E2%80%93present%29.svg/826px-Microsoft_Office_Word_%282018%E2%80%93present%29.svg.png"
+      <td title="O Word esta em simulação de execução"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Microsoft_Office_Word_%282018%E2%80%93present%29.svg/826px-Microsoft_Office_Word_%282018%E2%80%93present%29.svg.png"
           width="20px" height="20px" alt=""> Word</td>
-      <td id="lineCPU12">----</td>
-      <td id="linePB12">----</td>
-      <td id="lineWS12">----</td>
-      <td id="linePID12">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU12">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB12">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS12">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID12">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessRsInstagram">Encerrar Processo</button></td>
     </tr>
     <tr class="line2" id="lineTwo">
       <td title="O Discord esta em simulação de execução"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png"
           width="20px" height="20px" alt=""> Discord</td>
-      <td id="lineCPU2">----</td>
-      <td id="linePB2">----</td>
-      <td id="lineWS2">----</td>
-      <td id="linePID2">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU2">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB2">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS2">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID2">----</td>
       <td>Discord Inc</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineTwo">Encerrar Processo</button></td>
     </tr>
     <tr class="line3" id="lineThree">
       <td title="O Visual Studio Code esta em simulação de execução"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png" width="20px"
           height="20px" alt=""> VS Code</td>
-      <td id="lineCPU3">----</td>
-      <td id="linePB3">----</td>
-      <td id="lineWS3">----</td>
-      <td id="linePID3">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU3">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB3">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS3">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID3">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineThree">Encerrar Processo</button></td>
     </tr>
     <tr class="line32" id="line32">
       <td title="O Visual Studio Code esta em simulação de execução"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png" width="20px"
           height="20px" alt=""> VS Code</td>
-      <td id="lineCPU32">----</td>
-      <td id="linePB32">----</td>
-      <td id="lineWS32">----</td>
-      <td id="linePID32">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU32">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB32">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS32">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID32">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessRsVSCode">Encerrar Processo</button></td>
     </tr>
@@ -214,10 +180,10 @@
       <td title="O Bloco de Notas esta em simulação de execução"><img
           src="https://upload.wikimedia.org/wikipedia/pt/5/51/Logo_Bloco_de_Notas-pt.PNG"
           width="20px" height="20px" alt=""> Bloco de notas</td>
-      <td id="lineCPU4">----</td>
-      <td id="linePB4">----</td>
-      <td id="lineWS4">----</td>
-      <td id="linePID4">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU4">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB4">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS4">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID4">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineFour">Encerrar Processo</button></td>
     </tr>
@@ -225,10 +191,10 @@
       <td title="O Bloco de Notas esta em simulação de execução, equivale a 2 programas iguais"><img
           src="https://upload.wikimedia.org/wikipedia/pt/5/51/Logo_Bloco_de_Notas-pt.PNG"
           width="20px" height="20px" alt=""> Bloco de notas</td>
-      <td id="lineCPU42">----</td>
-      <td id="linePB42">----</td>
-      <td id="lineWS42">----</td>
-      <td id="linePID42">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU42">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB42">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS42">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID42">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessRsExplorer">Encerrar Processo</button></td>
     </tr>
@@ -236,10 +202,10 @@
       <td title="O Google esta em simulação de execução"><img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1024px-Google_Chrome_icon_%28September_2014%29.svg.png"
           width="20px" height="20px" alt=""> Google Chrome</td>
-      <td id="lineCPU5">----</td>
-      <td id="linePB5">----</td>
-      <td id="lineWS5">----</td>
-      <td id="linePID5">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU5">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB5">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS5">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID5">----</td>
       <td>Google LLC</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineFive">Encerrar Processo</button></td>
     </tr>
@@ -247,30 +213,30 @@
       <td title="O Google esta em simulação de execução"><img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1024px-Google_Chrome_icon_%28September_2014%29.svg.png"
           width="20px" height="20px" alt=""> Google Chrome</td>
-      <td id="lineCPU52">----</td>
-      <td id="linePB52">----</td>
-      <td id="lineWS52">----</td>
-      <td id="linePID52">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU52">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB52">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS52">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID52">----</td>
       <td>Google LLC</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessRsGoogle">Encerrar Processo</button></td>
     </tr>
     <tr class="line6" id="lineSix">
       <td title="O Excel esta em simulação de execução"><img src="https://img.icons8.com/color/480/microsoft-excel-2019--v1.png" width="20px" height="20px" alt="">
         Excel</td>
-      <td id="lineCPU6">----</td>
-      <td id="linePB6">----</td>
-      <td id="lineWS6">----</td>
-      <td id="linePID6">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU6">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB6">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS6">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID6">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessLineSix">Encerrar Processo</button></td>
     </tr>
     <tr class="line62" id="line62">
       <td title="O Excel esta em simulação de execução"><img src="https://img.icons8.com/color/480/microsoft-excel-2019--v1.png" width="20px" height="20px" alt="">
         Excel</td>
-      <td id="lineCPU62">----</td>
-      <td id="linePB62">----</td>
-      <td id="lineWS62">----</td>
-      <td id="linePID62">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineCPU62">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePB62">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="lineWS62">----</td>
+      <td title="Consulte a aba SOBRE para saber mais" id="linePID62">----</td>
       <td>Microsoft Corporation</td>
       <td><button class="btn btn-danger" name="button" id="stopProcessRsExcel">Encerrar Processo</button></td>
     </tr>

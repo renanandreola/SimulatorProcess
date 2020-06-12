@@ -1,3 +1,4 @@
+//BUSCANDO AS BIBLIOTECAS
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -29,8 +30,7 @@ extended: true
 
 app.use(express.static('public'));
 
-//pages 
-  
+//PÁGINAS DO SITE 
 app.get('/', (req, res) => {
     res.render('index.html')
 });

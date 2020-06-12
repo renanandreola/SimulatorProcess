@@ -3,9 +3,8 @@
 
 
 {% block content %}
-
+<!-- ABA 'SOBRE' ONDE ESTÃO PRESENTES OS CONTEÚDOS DE APRENDIZAGEM -->
 <br>
-
 <div class="coluna1 col-6">
       <h5 class="title d-flex justify-content-center">Para iniciar, você sabe o que é um processo?</h5>
       <p class="paragrafo1">Os processos representam tarefas em execução, mas nem todas têm relação direta com algum aplicativo.
@@ -21,13 +20,18 @@
 </div>
       
 <div class="coluna2 col-6">
-      <img class="image1" src="https://rpacongress.com.br/2018/wp-content/uploads/2018/05/2018-AI-safety-grants.jpg" height="300px" alt="">
+      <img class="image1" 
+      id="zoomImage"
+      src="https://rpacongress.com.br/2018/wp-content/uploads/2018/05/2018-AI-safety-grants.jpg"
+      data-zoom-image="https://rpacongress.com.br/2018/wp-content/uploads/2018/05/2018-AI-safety-grants.jpg"
+      height="300px" alt="">
 </div>
 
 <!---->
 
 <div class="coluna1 col-6">
-    <img class="image2" src="https://webmaissistemas.com.br/gerenciador-financeiro/images/gestao-financeira-erp-gerenciador-financeiro.png" height="300px" alt="">
+    <img class="image2" 
+    src="https://webmaissistemas.com.br/gerenciador-financeiro/images/gestao-financeira-erp-gerenciador-financeiro.png" height="300px" alt="">
 </div>
   
 <div class="coluna2 col-6">
@@ -65,7 +69,10 @@
 </div>
   
 <div class="coluna2 col-6">
-  <img class="image3" src="https://image.flaticon.com/icons/png/512/1892/1892518.png" height="300px" alt="">
+  <img class="image3" 
+  id="zoomImage3"
+  src="https://conceitos.com/wp-content/uploads/tecnologia/CPU-configuracao-computador.jpg" height="300px" alt=""
+  data-zoom-image="https://conceitos.com/wp-content/uploads/tecnologia/CPU-configuracao-computador.jpg">
 </div>
 
 <!---->
@@ -81,8 +88,9 @@
 <h5 class="title d-flex justify-content-center">O que são os Private Bytes?</h5>
 <br>
 <p class="paragrafo2">Os Private Bytes basicamente se referem a quantidade de memória que um processo
-  executável solicitou, porém não necessariamente à quantidade que está realmente usando. O nome Private,
-  ou seja, privados, são chamados assim porque eles excluem arquivos mapeados da memória
+  executável solicitou, porém não necessariamente à quantidade que está realmente usando, ou seja,
+  é o tamanho atual, em bytes, de memória que o processo necessitou alocar e não pode ser compartilhado com outros 
+  processos. O nome Private, ou seja, privados, são chamados assim porque eles excluem arquivos mapeados da memória.
 </p>
 </div>
 
@@ -98,7 +106,14 @@
   <p class="paragrafo1">Working Set de um processo é o conjunto de páginas referenciadas por ele 
     durante determinado intervalo de tempo, ou, segundo Denning, é o conjunto de páginas constantemente 
     referenciadas pelo processo, devendo permanecer na memória principal para que execute de forma eficiente, 
-    evitando a elevada taxa de paginação (thrashing).</p>
+    evitando a elevada taxa de paginação (thrashing).
+  </p>
+  <p class="paragrafo1">
+    Podemos perceber que quando um programa inicia sua execução, uma elevada taxa de page faults, que são
+    páginas que não se encontram na memória, que se estabilizam com o decorrer de sua execução, assim 
+    se a memória livre do computador estiver acima de um determinado limite, as páginas serão deixadas no conjunto 
+    de trabalho de um processo, mesmo que não estejam em uso.
+  </p>
   <br>
 </div>
   
@@ -131,6 +146,33 @@
 
 <!---->
 
+<!---->
+
+<div class="coluna1 col-6">
+  
+  <h5 class="title d-flex justify-content-center">Você sabe o que é Término de processos?</h5>
+  
+  <p class="paragrafo1">Quando um processo é iniciado, ele não fica em execução para sempre, em um momento ele
+    precsia terminar. Na maior parte dos casos os processos finalizam porque ja realizaram o seu trabalho na máquina.
+    Quando um compilador acaba de compilar e executar um programa, ele executa também uma chamada de sistema 
+    indicando para o sistema operacional que ele terminou, assim o processo finaliza. 
+  </p>
+  <p class="paragrafo1">Um outro meio de encerrar um processo, é quando usuário informa ao sistema operacional que
+    quer cancelar um processo, no Unix, essa chamada é a Kill, já no Win32 é a TerminateProcess. Além disso, o 
+    próprio programa pode sinalizar ao sistema operacional a correção de algum erro, assim o SO interrompe o processo.
+    Com isso, normalmente um processo finaliza pelas seguintes razões: saída normal (voluntária), saída por erro 
+    (voluntária), erro fatal (involuntário) e cancelamento por um outro processo (involuntário).
+  </p>
+  
+</div>
+  
+<div class="coluna2 col-6">
+  <img class="image3" src="https://www.cm-seixal.pt/sites/default/files/styles/780x520/public/field/image/alerta.jpg?itok=13dinVyM" height="300px" alt="">
+</div>
+
+<!---->
+
+
 <div class="clearfix "></div>
 {% endblock %}
 
@@ -139,5 +181,12 @@
 {% endblock %}
 
 {% block script %}
+
 <link rel="stylesheet" href="/styles/about.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/elevatezoom.js" charset="utf-8"></script>
+<script src="/js/about.js" charset="utf-8"></script>
+
+
+
 {% endblock %}
