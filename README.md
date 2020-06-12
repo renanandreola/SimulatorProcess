@@ -19,7 +19,7 @@ Simulador de Processos
 - [Como Biaxar o Projeto](#-como-baixar-o-projeto)
 ---
 
-### 🔖 Sobre
+### Sobre
  O projeto **Simulador de Processos** é um trabalho para a disciplina de sistemas operacionais da instituição URI Erechim, do curso de Ciência da Computação 2020. Esse trabalho abrange os conhecimentos e informações aprendidas na disciplina de *Sistemas Operacionais* e trata-se de uma implementação didática de uma técnica e/ou tecnologia, em forma de sistema original, para que possa servir como base de estudo para futuros estudantes de sistemas operacionais. 
 
  O trabalho apresenta um simulador de processos computacionais, onde é possível simular a execução de um programa, duplicar essa execução e finalizá-la, além de algumas explicações didáticas sobre os conteúdos que se relacionam a execução de um processo.
@@ -32,7 +32,7 @@ Simulador de Processos
 
 ---
 
- #### 🚀 Tecnologias Utilizadas
+ #### Tecnologias Utilizadas
  O trabalho foi desenvolvido utilizando as seguintes tecnologias
 
  - [HTML5](https://html.com/)
@@ -44,7 +44,7 @@ Simulador de Processos
 
  ---
 
- #### 📂 Como baixar o projeto
+ #### Como baixar o projeto
 Para poder executar o projeto em máquina local são necessários alguns passos
 - Fazer o download do [NodeJS](https://nodejs.org/en/download/)
 - Baixar um editor de códigos para poder fazer modificações: recomendado [Visual Studio Code](https://code.visualstudio.com/download)
