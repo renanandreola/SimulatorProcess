@@ -14,9 +14,9 @@ Simulador de Processos
 </h3>
 
 ### Índice
-- [Sobre](#-sobre)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Como Biaxar o Projeto](#-como-baixar-o-projeto)
+- [Sobre](#sobre)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Biaxar o Projeto](#como-baixar-o-projeto)
 ---
 
 ### Sobre
