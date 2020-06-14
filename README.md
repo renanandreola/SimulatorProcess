@@ -48,6 +48,7 @@ Simulador de Processos
 Para poder executar o projeto em máquina local são necessários alguns passos
 - Fazer o download do [NodeJS](https://nodejs.org/en/download/)
 - Baixar um editor de códigos para poder fazer modificações: recomendado [Visual Studio Code](https://code.visualstudio.com/download)
+- Fazer o download do [Git Bash](https://git-scm.com/downloads)
 
 Após, dentro da pasta do proejto, ao lado superior direito, o botão **clone or download** possui um link que será necessário para fazer o clone do projeto. Esse link estará defninido nas linhas abaixo para o download.
 
@@ -62,6 +63,8 @@ Abrir o prompt de comando e seguir os seguintes passos:
 
 # Instalar as dependências
  $ npm install
+
+ $ npm install -g node-gyp
  ```
  Após isso, será necessário fazer o download de algumas bibliotecas que são fundamentais para rodar o proejto.
  
