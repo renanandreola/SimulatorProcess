@@ -16,9 +16,9 @@
         <h5 class="icon-title-insta" id="processName">Word</h5>
       </div>
       <div class="col-4">
-        <button type="submit" class="insta btn btn-primary" name="button" id="startInstagram">Iniciar</button>
+        <button type="submit" class="insta btn btn-primary" name="button" id="startInstagram" data-toggle="modal" data-target="#modalWord">Iniciar</button>
         <br>
-        <button type="submit" class="restartInsta btn btn-success" name="button" id="restartInstagram">Duplicar processo</button>
+        <button type="submit" class="restartInsta btn btn-success" name="button" id="restartInstagram" data-toggle="modal" data-target="#replayModalWord">Duplicar processo</button>
       </div>
     </div>
 
@@ -31,10 +31,10 @@
         <h5 class="icon-title-discord" id="processName">Discord</h5>
       </div>
       <div class="col-4">
-        <button type="submit" class="discord btn btn-primary" name="button" id="startDiscord">Iniciar</button>
+        <button type="submit" class="discord btn btn-primary" name="button" id="startDiscord" data-toggle="modal" data-target="#modalDiscord">Iniciar</button>
       </div>
       
-        <button type="submit" class="restartDiscord btn btn-success" name="button" id="restartDiscord">Duplicar processo</button>
+        <button type="submit" class="restartDiscord btn btn-success" name="button" id="restartDiscord" data-toggle="modal" data-target="#replayModalDiscord">Duplicar processo</button>
     </div>
 
     <div class="col-md-2 mx-auto">
@@ -46,9 +46,9 @@
         <h5 class="icon-title-vscode" id="processName">Visual Studio Code</h5>
       </div>
       <div class="col-4">
-        <button type="submit" class="vscode btn btn-primary" name="button" id="startVSCode">Iniciar</button>
+        <button type="submit" class="vscode btn btn-primary" name="button" id="startVSCode" data-toggle="modal" data-target="#modalVSCode">Iniciar</button>
         <br>
-        <button type="submit" class="restartVSCode btn btn-success" name="button" id="restartVSCode">Duplicar processo</button>
+        <button type="submit" class="restartVSCode btn btn-success" name="button" id="restartVSCode" data-toggle="modal" data-target="#replayModalVSCode">Duplicar processo</button>
       </div>
     </div>
 
@@ -62,9 +62,9 @@
         <h5 class="icon-title-explorer" id="processName">Bloco de notas</h5>
       </div>
       <div class="col-4">
-        <button type="submit" class="explorer btn btn-primary" name="button" id="startExplorer">Iniciar</button>
+        <button type="submit" class="explorer btn btn-primary" name="button" id="startExplorer" data-toggle="modal" data-target="#modalBlocoNotas">Iniciar</button>
         <br>
-        <button type="submit" class="restartExplorer btn btn-success" name="button" id="restartExplorer">Duplicar processo</button>
+        <button type="submit" class="restartExplorer btn btn-success" name="button" id="restartExplorer" data-toggle="modal" data-target="#replayModalBlocoNotas">Duplicar processo</button>
       </div>
     </div>
 
@@ -78,9 +78,9 @@
         <h5 class="icon-title-google" id="processName">Google Chrome</h5>
       </div>
       <div class="col-4">
-        <button type="submit" class="google btn btn-primary" name="button" id="startGoogle">Iniciar</button>
+        <button type="submit" class="google btn btn-primary" name="button" id="startGoogle" data-toggle="modal" data-target="#modalGoogle">Iniciar</button>
         <br>
-        <button type="submit" class="restartGoogle btn btn-success" name="button" id="restartGoogle">Duplicar processo</button>
+        <button type="submit" class="restartGoogle btn btn-success" name="button" id="restartGoogle" data-toggle="modal" data-target="#replayModalGoogle">Duplicar processo</button>
       </div>
     </div>
 
@@ -92,26 +92,16 @@
         <h5 class="icon-title-excel" id="processName">Excel</h5>
       </div>
       <div class="col-4">
-        <button type="submit" class="excel btn btn-primary" name="button" id="startExcel">Iniciar</button>
+        <button type="submit" class="excel btn btn-primary" name="button" id="startExcel" data-toggle="modal" data-target="#modalExcel">Iniciar</button>
         <br>
-        <button type="submit" class="restartExcel btn btn-success" name="button" id="restartExcel">Duplicar processo</button>
+        <button type="submit" class="restartExcel btn btn-success" name="button" id="restartExcel" data-toggle="modal" data-target="#replayModalExcel">Duplicar processo</button>
       </div>
     </div>
 
   </div>
 </div>
 <br>
-<!--
-   <div class="" id="result-container">
-       <h1 class="d-flex justify-content-center">Processos</h1>
-       <div class="mt-4"></div>
 
-       <ul  class="list-group-item list-group-item-secondary" id="result">
-        <li class="list-group-item list-group-item-warning d-flex justify-content-center">PROCESSOS SIMULADOS EM EXECUÇÃO (clique em iniciar para começar)</li>
-        <br>
-       </ul>
-   </div>
--->
 
 <table class="table">
   <thead>
@@ -134,7 +124,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS1">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID1">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessLineOne">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessLineOne" data-toggle="modal" data-target="#modalCloseWord">Encerrar Processo</button></td>
     </tr>
     <tr class="line12" id="line12">
       <td title="O Word esta em simulação de execução"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Microsoft_Office_Word_%282018%E2%80%93present%29.svg/826px-Microsoft_Office_Word_%282018%E2%80%93present%29.svg.png"
@@ -144,7 +134,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS12">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID12">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessRsInstagram">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsInstagram" data-toggle="modal" data-target="#modalCloseWord2">Encerrar Processo</button></td>
     </tr>
     <tr class="line2" id="lineTwo">
       <td title="O Discord esta em simulação de execução"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png"
@@ -154,7 +144,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS2">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID2">----</td>
       <td>Discord Inc</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessLineTwo">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessLineTwo" data-toggle="modal" data-target="#modalCloseDiscord">Encerrar Processo</button></td>
     </tr>
     <tr class="line3" id="lineThree">
       <td title="O Visual Studio Code esta em simulação de execução"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png" width="20px"
@@ -164,7 +154,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS3">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID3">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessLineThree">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessLineThree" data-toggle="modal" data-target="#modalCloseVSCode">Encerrar Processo</button></td>
     </tr>
     <tr class="line32" id="line32">
       <td title="O Visual Studio Code esta em simulação de execução"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png" width="20px"
@@ -174,7 +164,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS32">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID32">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessRsVSCode">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsVSCode" data-toggle="modal" data-target="#modalCloseVSCode2">Encerrar Processo</button></td>
     </tr>
     <tr class="line4" id="lineFour">
       <td title="O Bloco de Notas esta em simulação de execução"><img
@@ -185,7 +175,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS4">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID4">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessLineFour">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessLineFour" data-toggle="modal" data-target="#modalCloseBN">Encerrar Processo</button></td>
     </tr>
     <tr class="line41" id="line41">
       <td title="O Bloco de Notas esta em simulação de execução, equivale a 2 programas iguais"><img
@@ -196,7 +186,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS42">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID42">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessRsExplorer">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsExplorer" data-toggle="modal" data-target="#modalCloseBN2">Encerrar Processo</button></td>
     </tr>
     <tr class="line5" id="lineFive">
       <td title="O Google esta em simulação de execução"><img
@@ -207,7 +197,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS5">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID5">----</td>
       <td>Google LLC</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessLineFive">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessLineFive" data-toggle="modal" data-target="#modalCloseGoogle">Encerrar Processo</button></td>
     </tr>
     <tr class="line52" id="line52">
       <td title="O Google esta em simulação de execução"><img
@@ -218,7 +208,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS52">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID52">----</td>
       <td>Google LLC</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessRsGoogle">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsGoogle" data-toggle="modal" data-target="#modalCloseGoogle2">Encerrar Processo</button></td>
     </tr>
     <tr class="line6" id="lineSix">
       <td title="O Excel esta em simulação de execução"><img src="https://img.icons8.com/color/480/microsoft-excel-2019--v1.png" width="20px" height="20px" alt="">
@@ -228,7 +218,7 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS6">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID6">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessLineSix">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessLineSix" data-toggle="modal" data-target="#modalCloseExcel">Encerrar Processo</button></td>
     </tr>
     <tr class="line62" id="line62">
       <td title="O Excel esta em simulação de execução"><img src="https://img.icons8.com/color/480/microsoft-excel-2019--v1.png" width="20px" height="20px" alt="">
@@ -238,10 +228,570 @@
       <td title="Consulte a aba SOBRE para saber mais" id="lineWS62">----</td>
       <td title="Consulte a aba SOBRE para saber mais" id="linePID62">----</td>
       <td>Microsoft Corporation</td>
-      <td><button class="btn btn-danger" name="button" id="stopProcessRsExcel">Encerrar Processo</button></td>
+      <td><button class="btn btn-danger" name="button" id="stopProcessRsExcel" data-toggle="modal" data-target="#modalCloseExcel2">Encerrar Processo</button></td>
     </tr>
   </tbody>
 </table>
+
+<!-- MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS MODAIS -->
+
+<!-- Modal word-->
+<div class="modal fade" id="modalWord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inicialização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a inicialização do programa Word, ou seja, representa um software em execução.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal word-->
+
+<!-- replay Modal word-->
+<div class="modal fade" id="replayModalWord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Duplicação de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você duplicou a inicialização do programa Word. Duplicar o processo significa que você abriu novamente o mesmo programa.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal word-->
+
+<!-- Modal Discord-->
+<div class="modal fade" id="modalDiscord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inicialização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a inicialização do programa Discord, ou seja, representa um software em execução.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal discord-->
+
+<!-- replay Modal discord-->
+<div class="modal fade" id="replayModalDiscord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Duplicação de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você não pode duplicar esse programa, sua execução é única.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal discord-->
+
+<!-- Modal vscode-->
+<div class="modal fade" id="modalVSCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inicialização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a inicialização do programa Visual Studio Code, ou seja, representa um software em execução.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal vscode-->
+
+<!-- replay Modal vscode-->
+<div class="modal fade" id="replayModalVSCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Duplicação de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você duplicou a inicialização do Visual Studio Code. Duplicar o processo significa que você abriu novamente o mesmo programa.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal vscode-->
+
+<!-- Modal Bloco Notas -->
+<div class="modal fade" id="modalBlocoNotas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inicialização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a inicialização do Bloco de Notas, ou seja, representa um software em execução.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Bloco Notas -->
+
+<!-- replay Modal Bloco Notas-->
+<div class="modal fade" id="replayModalBlocoNotas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Duplicação de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você duplicou a inicialização do Bloco de Notas. Duplicar o processo significa que você abriu novamente o mesmo programa.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal Bloco Notas-->
+
+<!-- Modal Google -->
+<div class="modal fade" id="modalGoogle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inicialização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a inicialização do navegador Google Chrome, ou seja, representa um software em execução.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Google -->
+
+<!-- replay Modal Google -->
+<div class="modal fade" id="replayModalGoogle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Duplicação de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você duplicou a inicialização do Google Chrome. Duplicar o processo significa que você abriu novamente o mesmo programa.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal Google -->
+
+<!-- Modal Excel -->
+<div class="modal fade" id="modalExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inicialização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a inicialização do programa Excel, ou seja, representa um software em execução.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Excel -->
+
+<!-- replay Modal Excel -->
+<div class="modal fade" id="replayModalExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Duplicação de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você duplicou a inicialização do programa Excel. Duplicar o processo significa que você abriu novamente o mesmo programa.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal Excel -->
+
+
+<!-- BOTOES DE FINALIZAR PROCESSOS -->
+<!-- Modal Close Word -->
+<div class="modal fade" id="modalCloseWord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção do programa Word, ou seja, o processo finalizou
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Close Word -->
+
+<!-- replay Modal Close Word -->
+<div class="modal fade" id="modalCloseWord2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo duplicado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção da duplicação do programa Word, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal Close Word -->
+
+<!-- Modal Close Discord -->
+<div class="modal fade" id="modalCloseDiscord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção do programa Discord, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Close Discord -->
+
+<!-- Modal Close VSCode -->
+<div class="modal fade" id="modalCloseVSCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção do Visual Studio Code, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Close VSCode -->
+
+<!-- replay Modal Close VSCode -->
+<div class="modal fade" id="modalCloseVSCode2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo duplicado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção da duplicação do Visual Studio Code, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal Close VSCode -->
+
+<!-- Modal Close BN -->
+<div class="modal fade" id="modalCloseBN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção do Bloco de Notas, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal BN -->
+
+<!-- replay Modal BN -->
+<div class="modal fade" id="modalCloseBN2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo duplicado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção da duplicação do Bloco de Notas, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal BN -->
+
+<!-- Modal Close Google -->
+<div class="modal fade" id="modalCloseGoogle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção do Google Chrome, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Google -->
+
+<!-- replay Modal Google -->
+<div class="modal fade" id="modalCloseGoogle2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo duplicado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção da duplicação do Google Chrome, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal Google -->
+
+<!-- Modal Close Excel -->
+<div class="modal fade" id="modalCloseExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção do programa Excel, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal Excel -->
+
+<!-- replay Modal excel -->
+<div class="modal fade" id="modalCloseExcel2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Finalização de processo duplicado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Você simulou a finalizção da duplicação do programa Excel, ou seja, o processo finalizou.
+        <br>
+        <br>
+        Veja mais na aba "SOBRE".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end replay modal Excel -->
+
+
+
+
 
 {% endblock %}
 
@@ -254,4 +804,5 @@ Simulador
 <script src="/js/simulator.js" charset="utf-8"></script>
 <script src="/js/aleatoryNumbers.js" charset="utf-8"></script>
 <link rel="stylesheet" href="/styles/simulator.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 {% endblock %}

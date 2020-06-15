@@ -25,6 +25,7 @@ var rsBtnExcel = $("#restartExcel");
 // Valida o clique no botão Iniciar para criar linha na tabela
 $("#startInstagram").on("click", function(){
     //notificação do clique
+    /*
     if(window.Notification&&Notification.permission!=="denied"){
       Notification.requestPermission(function(status){
         let n = new Notification('Inicialização de processo',{
@@ -33,6 +34,7 @@ $("#startInstagram").on("click", function(){
         });
       });
   };
+  */
   //fim da notificação
   lineOne.toggle();
     $('#startInstagram').addClass(' nav-link disabled');
@@ -42,6 +44,7 @@ $("#startInstagram").on("click", function(){
 
 $("#restartInstagram").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -50,6 +53,7 @@ $("#restartInstagram").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line12.toggle();
   $('#restartInstagram').addClass(' nav-link disabled');
@@ -58,6 +62,7 @@ $("#restartInstagram").on("click", function(){
 
 $("#startDiscord").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -66,6 +71,7 @@ $("#startDiscord").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineTwo.toggle();
     $('#startDiscord').addClass(' nav-link disabled');
@@ -75,6 +81,7 @@ $("#startDiscord").on("click", function(){
 
 $("#restartDiscord").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Ação não realizada',{
@@ -83,12 +90,14 @@ $("#restartDiscord").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
 });
 
 
 $("#startVSCode").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -97,6 +106,7 @@ $("#startVSCode").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineThree.toggle();
     $('#startVSCode').addClass(' nav-link disabled');
@@ -106,6 +116,7 @@ $("#startVSCode").on("click", function(){
 
 $("#restartVSCode").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -114,6 +125,7 @@ $("#restartVSCode").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line32.toggle();
   $('#restartVSCode').addClass(' nav-link disabled');
@@ -122,6 +134,7 @@ $("#restartVSCode").on("click", function(){
 
 $("#startExplorer").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -130,6 +143,7 @@ $("#startExplorer").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineFour.toggle();
     $('#startExplorer').addClass(' nav-link disabled');
@@ -139,6 +153,7 @@ $("#startExplorer").on("click", function(){
 
 $("#restartExplorer").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -147,6 +162,7 @@ $("#restartExplorer").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line41.toggle();
   $('#restartExplorer').addClass(' nav-link disabled');
@@ -155,6 +171,7 @@ $("#restartExplorer").on("click", function(){
 
 $("#startGoogle").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -163,6 +180,7 @@ $("#startGoogle").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineFive.toggle();
     $('#startGoogle').addClass(' nav-link disabled');
@@ -172,6 +190,7 @@ $("#startGoogle").on("click", function(){
 
 $("#restartGoogle").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -180,6 +199,7 @@ $("#restartGoogle").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line52.toggle();
   $('#restartGoogle').addClass(' nav-link disabled');
@@ -188,6 +208,7 @@ $("#restartGoogle").on("click", function(){
 
 $("#startExcel").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -196,6 +217,7 @@ $("#startExcel").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineSix.toggle();
     $('#startExcel').addClass(' nav-link disabled');
@@ -205,6 +227,7 @@ $("#startExcel").on("click", function(){
 
 $("#restartExcel").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Inicialização de processo',{
@@ -214,6 +237,7 @@ $("#restartExcel").on("click", function(){
     });
 };
 //fim da notificação
+*/
   line62.toggle();
   $('#restartExcel').addClass(' nav-link disabled');
 });
@@ -231,6 +255,7 @@ var stopProcess6 = $("#stopProcessLineSix");
 // Valida o clique no botao para remover a linha da tabela
 $("#stopProcessLineOne").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
@@ -239,6 +264,7 @@ $("#stopProcessLineOne").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineOne.toggle();
     $('#startInstagram').removeClass('nav-link disabled');
@@ -248,6 +274,7 @@ $("#stopProcessLineOne").on("click", function(){
 
 $("#stopProcessLineTwo").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
@@ -256,6 +283,7 @@ $("#stopProcessLineTwo").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineTwo.toggle();
   $('#startDiscord').removeClass('nav-link disabled');
@@ -265,6 +293,7 @@ $("#stopProcessLineTwo").on("click", function(){
 
 $("#stopProcessLineThree").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
@@ -273,6 +302,7 @@ $("#stopProcessLineThree").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineThree.toggle();
   $('#startVSCode').removeClass('nav-link disabled');
@@ -282,6 +312,7 @@ $("#stopProcessLineThree").on("click", function(){
 
 $("#stopProcessLineFour").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
@@ -290,6 +321,7 @@ $("#stopProcessLineFour").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineFour.toggle();
   $('#startExplorer').removeClass('nav-link disabled');
@@ -299,6 +331,7 @@ $("#stopProcessLineFour").on("click", function(){
 
 $("#stopProcessLineFive").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
@@ -307,6 +340,7 @@ $("#stopProcessLineFive").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineFive.toggle();
   $('#startGoogle').removeClass('nav-link disabled');
@@ -316,6 +350,7 @@ $("#stopProcessLineFive").on("click", function(){
 
 $("#stopProcessLineSix").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo',{
@@ -324,6 +359,7 @@ $("#stopProcessLineSix").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   lineSix.toggle();
   $('#startExcel').removeClass('nav-link disabled');
@@ -334,6 +370,7 @@ $("#stopProcessLineSix").on("click", function(){
 // parar processos duplicados
 $("#stopProcessRsInstagram").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
@@ -342,6 +379,7 @@ $("#stopProcessRsInstagram").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line12.toggle();
   $('#restartInstagram').removeClass('nav-link disabled');
@@ -350,6 +388,7 @@ $("#stopProcessRsInstagram").on("click", function(){
 
 $("#stopProcessRsVSCode").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
@@ -358,6 +397,7 @@ $("#stopProcessRsVSCode").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line32.toggle();
   $('#restartVSCode').removeClass('nav-link disabled');
@@ -366,6 +406,7 @@ $("#stopProcessRsVSCode").on("click", function(){
 
 $("#stopProcessRsExplorer").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
@@ -374,6 +415,7 @@ $("#stopProcessRsExplorer").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line41.toggle();
   $('#restartExplorer').removeClass('nav-link disabled');
@@ -382,6 +424,7 @@ $("#stopProcessRsExplorer").on("click", function(){
 
 $("#stopProcessRsGoogle").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
@@ -390,6 +433,7 @@ $("#stopProcessRsGoogle").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line52.toggle();
   $('#restartGoogle').removeClass('nav-link disabled');
@@ -398,6 +442,7 @@ $("#stopProcessRsGoogle").on("click", function(){
 
 $("#stopProcessRsExcel").on("click", function(){
   //notificação do clique
+  /*
   if(window.Notification&&Notification.permission!=="denied"){
     Notification.requestPermission(function(status){
       let n = new Notification('Finalização de processo duplicado',{
@@ -406,6 +451,7 @@ $("#stopProcessRsExcel").on("click", function(){
       });
     });
 };
+*/
 //fim da notificação
   line62.toggle();
   $('#restartExcel').removeClass('nav-link disabled');
