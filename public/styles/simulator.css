@@ -162,3 +162,9 @@ table tbody tr.line62 {
     display: none;
     background-color: rgb(177, 177, 177);
 }
+
+.modal-content {
+    background-color: #c3e0ff;
+    color: black;
+    font-weight: bold;
+}

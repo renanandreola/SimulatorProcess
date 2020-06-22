@@ -1,3 +1,20 @@
 h1.title{
-  font-family: fantasy;  
+  font-family: fantasy;
+  color: #007bff;  
+}
+
+.title-simulator {
+  font-family: fantasy;
+  color: #007bff;
+}
+
+.underTitle {
+  font-weight: bold;
+}
+
+.underTitle-simulator {
+  font-weight: bold;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
 }
